@@ -78,4 +78,24 @@ class Logo extends Model
     {
         return $query->orderBy('order');
     }
+
+    /**
+     * Get the next available order number.
+     */
+    public static function nextOrder(): int
+    {
+        return (int) self::max('order') + 1;
+    }
+
+    /**
+     * Shift orders upwards to make space for a new order.
+     */
+    public static function shiftOrders(int $startOrder, $excludeId = null): void
+    {
+        $query = self::where('order', '>=', $startOrder);
+        if ($excludeId) {
+            $query->where('id', '!=', $excludeId);
+        }
+        $query->increment('order');
+    }
 }

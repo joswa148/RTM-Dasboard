@@ -71,7 +71,7 @@
                                class="rtm-form-control {{ $errors->has('order') ? 'is-invalid' : '' }}"
                                value="{{ old('order', $logo->order) }}"
                                min="0" style="max-width:140px;">
-                        <div class="rtm-form-text">Lower numbers appear first in the scroll strip.</div>
+                        <div class="rtm-form-text">Lower numbers appear first. Collisions are handled automatically.</div>
                         @error('order')
                             <div class="rtm-invalid-feedback">{{ $message }}</div>
                         @enderror

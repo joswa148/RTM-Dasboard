@@ -11,8 +11,37 @@ class LogoController extends Controller
 {
     public function index()
     {
+        // Auto-fix duplicates or gaps if they exist (Industry level robustness)
+        // This ensures the order is always clean (1, 2, 3...)
+        $this->normalizeOrdersIfNeeded();
+
         $logos = Logo::orderBy('order')->get();
         return view('admin.logos.index', compact('logos'));
+    }
+
+    /**
+     * Checks if orders are messy (duplicates or non-sequential) and fixes them.
+     */
+    private function normalizeOrdersIfNeeded()
+    {
+        $all = Logo::orderBy('order')->orderBy('updated_at', 'desc')->get();
+        $needsFix = false;
+        $expected = 1;
+
+        foreach ($all as $l) {
+            if ($l->order !== $expected) {
+                $needsFix = true;
+                break;
+            }
+            $expected++;
+        }
+
+        if ($needsFix) {
+            foreach ($all as $index => $l) {
+                $l->update(['order' => $index + 1]);
+            }
+            Cache::forget('trusted_logos');
+        }
     }
 
     public function create()
@@ -29,13 +58,21 @@ class LogoController extends Controller
         ]);
 
         $path = $request->file('image')->store('logos', 'public');
-        // $path = 'logos/filename.jpg'
-        // Storage::url() = '/storage/logos/filename.jpg' — works after php artisan storage:link
+
+        $order = $request->order;
+        if ($order === null || $order === '') {
+            $order = Logo::nextOrder();
+        } else {
+            // Collision handling: shift others up if this order exists
+            if (Logo::where('order', $order)->exists()) {
+                Logo::shiftOrders($order);
+            }
+        }
 
         Logo::create([
-            'image_path' => $path,          // store ONLY the relative path: logos/filename.jpg
+            'image_path' => $path,
             'alt_text'   => $request->alt_text,
-            'order'      => $request->order ?? 0,
+            'order'      => $order,
             'is_active'  => true,
         ]);
 
@@ -58,9 +95,22 @@ class LogoController extends Controller
             'is_active' => 'nullable',
         ]);
 
+        $newOrder = $request->order;
+        if ($newOrder === null || $newOrder === '') {
+            // If clearing the order, put it at the end
+            $newOrder = Logo::nextOrder();
+        } else {
+            // If manual order is provided and it's different from current, handle collision
+            if ($newOrder != $logo->order) {
+                if (Logo::where('order', $newOrder)->where('id', '!=', $logo->id)->exists()) {
+                    Logo::shiftOrders($newOrder, $logo->id);
+                }
+            }
+        }
+
         $data = [
             'alt_text'  => $request->alt_text,
-            'order'     => $request->order ?? 0,
+            'order'     => $newOrder,
             'is_active' => $request->has('is_active'),
         ];
 

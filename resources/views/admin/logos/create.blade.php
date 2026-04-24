@@ -88,9 +88,9 @@
                         <input type="number"
                                id="order" name="order"
                                class="rtm-form-control {{ $errors->has('order') ? 'is-invalid' : '' }}"
-                               value="{{ old('order', 0) }}"
+                               value="{{ old('order') }}"
                                min="0" style="max-width:140px;">
-                        <div class="rtm-form-text">Lower numbers appear first in the scroll (0 = first).</div>
+                        <div class="rtm-form-text">Leave blank to auto-assign next number. Lower numbers appear first.</div>
                         @error('order')
                             <div class="rtm-invalid-feedback">{{ $message }}</div>
                         @enderror
