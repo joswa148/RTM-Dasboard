@@ -75,7 +75,7 @@
             align-items: center;
             justify-content: center;
             gap: 15px;
-            margin-bottom: 30px;
+            margin-bottom: 24px;
         }
 
         .login-brand img { 
@@ -105,7 +105,7 @@
             background: var(--glass-bg);
             border-radius: 20px;
             box-shadow: 0 40px 100px rgba(0,0,0,0.6);
-            padding: 40px;
+            padding: 32px 40px;
             position: relative;
             overflow: hidden;
             border: 1px solid var(--glass-border);
@@ -130,7 +130,7 @@
         .login-subtitle {
             font-size: 14px;
             color: #64748b;
-            margin: 0 0 32px;
+            margin: 0 0 24px;
             line-height: 1.5;
         }
 
@@ -210,7 +210,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            margin: 0 0 28px;
+            margin: 0 0 24px;
             font-size: 13.5px;
         }
 
@@ -294,7 +294,7 @@
             text-align: center;
             color: #64748b;
             font-size: 13px;
-            margin-top: 30px;
+            margin-top: 24px;
         }
 
         .login-footer a { 
@@ -317,6 +317,31 @@
         }
 
         .secure-note i { color: #22c55e; }
+
+        /* ── Compact mode for short viewports ── */
+        @media (max-height: 720px) {
+            body { padding: 12px; }
+            .login-brand { margin-bottom: 16px; }
+            .login-brand img { height: 40px; }
+            .login-card { padding: 24px 32px; }
+            .login-subtitle { margin-bottom: 16px; }
+            .form-group { margin-bottom: 16px; }
+            .login-meta { margin-bottom: 16px; }
+            .login-footer { margin-top: 16px; }
+        }
+
+        @media (max-height: 600px) {
+            .login-brand { margin-bottom: 10px; }
+            .login-brand img { height: 32px; }
+            .login-card { padding: 20px 24px; }
+            .login-title { font-size: 20px; }
+            .login-subtitle { margin-bottom: 12px; font-size: 13px; }
+            .form-group { margin-bottom: 12px; }
+            .form-control { padding-top: 10px; padding-bottom: 10px; }
+            .btn-login { padding: 12px; }
+            .login-footer { display: none; }
+            .secure-note { margin-top: 12px; }
+        }
     </style>
 </head>
 <body>

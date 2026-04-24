@@ -408,7 +408,7 @@ div#leftCard .card-custom {
     position: absolute;
     bottom: 15px;
 }
-.card-custom.mt-5.mjs .btn-whposition: relative;pp{
+.card-custom.mt-5.mjs .btn-whatsapp {
     position: relative;
 }
 .mjs a.btn.btn-whatsapp {
@@ -3252,7 +3252,7 @@ header .tm-mobile-trigger span {
 
 /* Mega menu core */
 header .tm-submenu.tm-mega {
-  position: absolute;header .tm-list
+  position: absolute;
   background: #fff;
   box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
   top: 100%;
