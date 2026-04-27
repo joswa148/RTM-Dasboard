@@ -123,30 +123,9 @@
 </script>
 @endverbatim
 
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const preload = document.createElement("link");
-        preload.rel = "preload";
-        preload.as = "image";
-        preload.href = "{{ asset('assets/images/Frame-bg.webp') }}";
-        preload.setAttribute("fetchpriority", "high");
-        document.head.appendChild(preload);
-    });
-</script>
-
-
-
-
-
-
 
   <div class="nav-imgindex">
 <div class="container-fluid px-0 hero-section">
-  <img src="{{ asset('assets/images/Frame-bg.webp') }}" 
-       alt="photo"
-       fetchpriority="high"
-       decoding="async"
-       style="width:0;height:0;position:absolute;visibility:hidden;">
       <div class="row pt-lg-2" id="heross">
         <div class="col-lg-12 ">
             <p class="msewwe" style="
@@ -157,7 +136,7 @@
     border-radius: 36px;
     font-weight: 600;
     font-size: 15px;
-"class="ksesee">UAE’s First-Ever 1-Day Express Application Approval</p>
+" class="ksesee">UAE’s First-Ever 1-Day Express Application Approval</p>
           <h1>Leading Trademark<br>Service Provider in <span class="highlight-red">UAE</span></h1>
           <ul class="mt-2 ">
             <li> <img src="{{ asset('assets/images/tick-style.webp') }}" alt="" class="me-1 d-none  d-lg-inline-block"> Protect your brand identity and the Customer
@@ -798,9 +777,9 @@ Our team ensures hassle-free trademark registration with full compliance to loca
               </div>
             </div>
             </a>
-
+            
             <a href="trademark-registration-france">
-              <div class="country-card">
+            <div class="country-card">
               <div class="col-lg-2" aria-hidden="true">
                 <img src="{{ asset('assets/images/fl24.webp') }}" alt="" class="img-fluid">
               </div>
@@ -809,12 +788,12 @@ Our team ensures hassle-free trademark registration with full compliance to loca
                 <p class="sub">TM registration</p>
                 <div class="actions">
                   <button class="btn cta-button" type="button">Apply Online</button>
-                  <div class="price"> <span><img src="{{ asset('assets/images/dollar.webp') }}" alt="photo" class="dollar"></span> 579</div>
+                  <div class="price"> <span><img src="{{ asset('assets/images/dollar.webp') }}" alt="photo" class="dollar"></span> 699</div>
                 </div>
               </div>
             </div>
             </a>
-
+            
             <a href="trademark-registration-ireland">
             <div class="country-card">
               <div class="col-lg-2" aria-hidden="true">
@@ -825,12 +804,12 @@ Our team ensures hassle-free trademark registration with full compliance to loca
                 <p class="sub">TM registration</p>
                 <div class="actions">
                   <button class="btn cta-button" type="button">Apply Online</button>
-                  <div class="price"> <span><img src="{{ asset('assets/images/dollar.webp') }}" alt="photo" class="dollar"></span> 499</div>
+                  <div class="price"> <span><img src="{{ asset('assets/images/dollar.webp') }}" alt="photo" class="dollar"></span> 599</div>
                 </div>
               </div>
             </div>
             </a>
-
+            
             <a href="trademark-registration-spain">
             <div class="country-card">
               <div class="col-lg-2" aria-hidden="true">
@@ -845,8 +824,7 @@ Our team ensures hassle-free trademark registration with full compliance to loca
                 </div>
               </div>
             </div>
-           </a>
-            
+            </a>
 
           </div>
         </div>
@@ -903,46 +881,6 @@ Our team ensures hassle-free trademark registration with full compliance to loca
               </div>
             </div>
             </a>
-            <!-- <div class="country-card">
-              <div class="col-lg-2" aria-hidden="true">
-                <img src="{{ asset('public/asset/images/fo5.png') }}" alt="" class="img-fluid">
-              </div>
-              <div class="col-lg-10">
-                <h5 class="country">Qatar</h5>
-                <p class="sub">TM registration</p>
-                <div class="actions">
-                  <button class="btn cta-button" type="button">Apply Online</button>
-                  <div class="price">AED 7250</div>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="country-card row">
-              <div class="col-lg-2" aria-hidden="true">
-                <div vc></div>
-                <img src="{{ asset('public/asset/images/fo5.png') }}" alt="" class="img-fluid">
-              </div>
-              <div class="col-lg-10">
-                <h5 class="country">Qatar</h5>
-                <p class="sub">TM registration</p>
-                <div class="actions">
-                  <button class="btn cta-button" type="button">Apply Online</button>
-                  <div class="price">AED 7250</div>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="country-card">
-              <div class="col-lg-2" aria-hidden="true">
-                <img src="{{ asset('public/asset/images/fo5.png') }}" alt="" class="img-fluid">
-              </div>
-              <div class="col-lg-10">
-                <h5 class="country">Qatar</h5>
-                <p class="sub">TM registration</p>
-                <div class="actions">
-                  <button class="btn cta-button" type="button">Apply Online</button>
-                  <div class="price">AED 7250</div>
-                </div>
-              </div>
-            </div> -->
           </div>
         </div>
 
@@ -1278,8 +1216,3 @@ I’m grateful for their reliable service.
 @include('Layouts.indexheader')
 
 @include('Layouts.footer')
-
-
-
-
-

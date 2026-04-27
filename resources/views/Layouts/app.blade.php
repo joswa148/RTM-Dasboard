@@ -68,39 +68,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- ✅ Google Fonts NON-BLOCKING -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-      media="print"
-      onload="this.media='all'">
+<!-- ✅ Google Fonts (Critical for layout) -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<!-- ✅ CSS NON-BLOCKING (SAFE METHOD) -->
-<link rel="preload"
-      href="{{ asset('assets/css/bootstrap.min.css') }}?v={{ $rtmVersion }}"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
-
-<link rel="preload"
-      href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
-
-<!-- ✅ Icons NON-BLOCKING -->
-<link rel="preload"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
-
-<!-- ✅ Fallback (VERY IMPORTANT) -->
-<noscript>
-<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+<!-- ✅ Core CSS (Must be render-blocking to prevent FOUC) -->
+<link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}?v={{ $rtmVersion }}">
+<link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</noscript>
 
-<!-- ✅ Hero Image preload -->
-<link rel="preload" as="image" href="{{ asset('assets/images/Frame-bg.webp') }}">
 
 <!-- ✅ Favicon -->
 <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}">
