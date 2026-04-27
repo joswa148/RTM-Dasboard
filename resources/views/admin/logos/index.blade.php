@@ -62,7 +62,7 @@
                 <table class="rtm-table">
                     <thead>
                         <tr>
-                            <th>#</th>
+
                             <th>Logo</th>
                             <th>Alt Text</th>
                             <th>Order</th>
@@ -73,7 +73,7 @@
                     <tbody>
                         @foreach($logos as $logo)
                         <tr>
-                            <td style="color:#9ca3af;font-size:13px;">{{ $logo->id }}</td>
+
                             <td>
                                 <img src="{{ $logo->image_url }}"
                                      alt="{{ $logo->alt_text }}"
