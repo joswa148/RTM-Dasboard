@@ -272,14 +272,9 @@
       <p class="fs-3 mt-3">Trusted by Over <b class="Trusted"> 5000+ </b> Brands Globally</p>
       <div class="d-flex gap-4 align-items-center justify-content-center">         <div class="scroll-container" style="mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);">
           @if($logos->count())
-          <div class="scroll-wrapper" id="scroll-wrapper" style="will-change: transform;">
-            {{-- First set --}}
+          <div class="scroll-wrapper scroll-wrapper--static" id="scroll-wrapper" style="will-change: transform;">
             @foreach($logos as $logo)
-            <img src="{{ $logo->image_url }}" alt="{{ $logo->alt_text }}" loading="lazy" width="120" height="60" style="object-fit: contain; margin-right: 2rem;">
-            @endforeach
-            {{-- Duplicate set for seamless infinite loop --}}
-            @foreach($logos as $logo)
-            <img src="{{ $logo->image_url }}" alt="{{ $logo->alt_text }}" loading="lazy" width="120" height="60" aria-hidden="true" style="object-fit: contain; margin-right: 2rem;">
+            <img src="{{ $logo->image_url }}" alt="{{ $logo->alt_text }}" loading="lazy" width="120" height="60" data-logo-item="true" style="object-fit: contain; margin-right: 2rem;">
             @endforeach
           </div>
           @endif
@@ -1172,6 +1167,113 @@ I’m grateful for their reliable service.
 
  
 </div>
+
+<script>
+  (function () {
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+
+    const restoreTop = () => {
+      if (!window.location.hash) {
+        window.scrollTo(0, 0);
+      }
+    };
+
+    const initLogoStrip = () => {
+      const container = document.querySelector('.scroll-container');
+      const wrapper = document.getElementById('scroll-wrapper');
+      if (!container || !wrapper) return;
+
+      const layoutLogoStrip = () => {
+        wrapper.querySelectorAll('[data-logo-clone="true"]').forEach((node) => node.remove());
+        wrapper.classList.remove('scroll-wrapper--scroll');
+        wrapper.classList.add('scroll-wrapper--static');
+
+        const originals = Array.from(wrapper.querySelectorAll('[data-logo-item="true"]'));
+        if (!originals.length) return;
+
+        const totalWidth = originals.reduce((sum, img) => {
+          const styles = window.getComputedStyle(img);
+          const rect = img.getBoundingClientRect();
+          const width = rect.width || img.naturalWidth || 120;
+          return sum + width + parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
+        }, 0);
+
+        // Force scroll if 4 or more logos, OR if they don't fit the container
+        const shouldScroll = totalWidth > container.clientWidth || originals.length >= 5;
+
+        if (!shouldScroll) {
+          return;
+        }
+
+        // 1. Build a "base set" that is at least as wide as the container
+        let currentWidth = totalWidth;
+        while (currentWidth < container.clientWidth) {
+          originals.forEach((img) => {
+            const clone = img.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            clone.dataset.logoClone = 'true';
+            wrapper.appendChild(clone);
+            
+            const styles = window.getComputedStyle(img);
+            const rect = img.getBoundingClientRect();
+            const width = rect.width || img.naturalWidth || 120;
+            currentWidth += width + parseFloat(styles.marginLeft) + parseFloat(styles.marginRight);
+          });
+        }
+
+        // 2. Clone the entire base set once to enable a seamless loop with translateX(-50%)
+        const baseSetItems = Array.from(wrapper.children);
+        baseSetItems.forEach((item) => {
+          const clone = item.cloneNode(true);
+          clone.setAttribute('aria-hidden', 'true');
+          clone.dataset.logoClone = 'true';
+          wrapper.appendChild(clone);
+        });
+
+        wrapper.classList.remove('scroll-wrapper--static');
+        wrapper.classList.add('scroll-wrapper--scroll');
+      };
+
+      const images = Array.from(wrapper.querySelectorAll('[data-logo-item="true"]'));
+      let pending = images.length;
+
+      if (!pending) {
+        layoutLogoStrip();
+        return;
+      }
+
+      const onReady = () => {
+        pending -= 1;
+        if (pending <= 0) {
+          layoutLogoStrip();
+        }
+      };
+
+      images.forEach((img) => {
+        if (img.complete) {
+          onReady();
+        } else {
+          img.addEventListener('load', onReady, { once: true });
+          img.addEventListener('error', onReady, { once: true });
+        }
+      });
+
+      let resizeTimer;
+      window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(layoutLogoStrip, 120);
+      });
+    };
+
+    window.addEventListener('pageshow', restoreTop);
+    document.addEventListener('DOMContentLoaded', () => {
+      restoreTop();
+      initLogoStrip();
+    });
+  })();
+</script>
 
 @include('Layouts.indexheader')
 

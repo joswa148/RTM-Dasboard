@@ -16,7 +16,7 @@ class HomeController extends Controller
         $canonical = "https://right-trademark.com/";
         $metaKeyWord = "Trademark Registration, Brand registration UAE, Trademark consultant UAE, Trademark renewal, UAE trademark search, Trademark Registration UAE, Trademark registration services, Trademark Registration Dubai, Dubai trademark registration, UAE trademark registration, How to register a brand in UAE, Register a trademark in UAE, Intellectual property UAE";
         $logos = Cache::remember('trusted_logos', 86400, function () {
-            return Logo::active()->ordered()->get();
+            return Logo::active()->ordered()->get()->unique('image_path')->values();
         });
         return view('index',compact('pageTitle','metaDescription','canonical','metaKeyWord', 'logos'));
     }
@@ -828,4 +828,3 @@ class HomeController extends Controller
     }
     
 }
-

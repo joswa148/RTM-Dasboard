@@ -1288,13 +1288,26 @@ background: radial-gradient(161.39% 113.45% at 40.95% -10.45%, #FFF 32.81%, #FFF
 
 .scroll-wrapper {
   display: flex;
-  width: max-content;
-  /* Duration = ~3s per unique logo (both sets), clamped between 10s and 60s.
-     --logo-count is set on the parent <section> by Blade: style="--logo-count: N" */
-  animation: scroll calc(clamp(10, var(--logo-count, 6), 20) * 3s) linear infinite;
+  align-items: center;
+  gap: 0;
 }
 
 .scroll-wrapper.pause {
+  animation-play-state: paused;
+}
+
+.scroll-wrapper--static {
+  animation: none;
+  width: 100%;
+  justify-content: center;
+}
+
+.scroll-wrapper--scroll {
+  width: max-content;
+  animation: scroll calc(clamp(10, var(--logo-count, 6), 20) * 3s) linear infinite;
+}
+
+.scroll-wrapper--scroll:hover {
   animation-play-state: paused;
 }
 
