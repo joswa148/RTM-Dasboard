@@ -6,16 +6,17 @@ use Illuminate\Http\Request;
 use App\Models\Logo;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Cache;
+use Illuminate\Support\Facades\DB;
 
 class LogoController extends Controller
 {
     public function index()
     {
-        // Auto-fix duplicates or gaps if they exist (Industry level robustness)
-        // This ensures the order is always clean (1, 2, 3...)
+        // Auto-fix duplicates or gaps if they exist.
+        // This ensures the order is always clean (0, 1, 2...)
         $this->normalizeOrdersIfNeeded();
 
-        $logos = Logo::orderBy('order')->get();
+        $logos = Logo::ordered()->get();
         return view('admin.logos.index', compact('logos'));
     }
 
@@ -24,9 +25,9 @@ class LogoController extends Controller
      */
     private function normalizeOrdersIfNeeded()
     {
-        $all = Logo::orderBy('order')->orderBy('updated_at', 'desc')->get();
+        $all = Logo::ordered()->get();
         $needsFix = false;
-        $expected = 1;
+        $expected = 0;
 
         foreach ($all as $l) {
             if ($l->order !== $expected) {
@@ -37,9 +38,7 @@ class LogoController extends Controller
         }
 
         if ($needsFix) {
-            foreach ($all as $index => $l) {
-                $l->update(['order' => $index + 1]);
-            }
+            Logo::resequence();
             Cache::forget('trusted_logos');
         }
     }
@@ -59,22 +58,20 @@ class LogoController extends Controller
 
         $path = $request->file('image')->store('logos', 'public');
 
-        $order = $request->order;
-        if ($order === null || $order === '') {
-            $order = Logo::nextOrder();
-        } else {
-            // Collision handling: shift others up if this order exists
-            if (Logo::where('order', $order)->exists()) {
-                Logo::shiftOrders($order);
-            }
-        }
+        $targetOrder = ($request->order === null || $request->order === '')
+            ? Logo::nextOrder()
+            : (int) $request->order;
 
-        Logo::create([
-            'image_path' => $path,
-            'alt_text'   => $request->alt_text,
-            'order'      => $order,
-            'is_active'  => true,
-        ]);
+        DB::transaction(function () use ($path, $request, $targetOrder) {
+            $logo = Logo::create([
+                'image_path' => $path,
+                'alt_text'   => $request->alt_text,
+                'order'      => Logo::nextOrder(),
+                'is_active'  => true,
+            ]);
+
+            Logo::resequence($logo, $targetOrder);
+        });
 
         Cache::forget('trusted_logos');
 
@@ -95,37 +92,47 @@ class LogoController extends Controller
             'is_active' => 'nullable',
         ]);
 
-        $newOrder = $request->order;
-        if ($newOrder === null || $newOrder === '') {
-            // If clearing the order, put it at the end
-            $newOrder = Logo::nextOrder();
-        } else {
-            // If manual order is provided and it's different from current, handle collision
-            if ($newOrder != $logo->order) {
-                if (Logo::where('order', $newOrder)->where('id', '!=', $logo->id)->exists()) {
-                    Logo::shiftOrders($newOrder, $logo->id);
-                }
-            }
-        }
+        $newOrder = ($request->order === null || $request->order === '')
+            ? max(Logo::count() - 1, 0)
+            : (int) $request->order;
 
         $data = [
             'alt_text'  => $request->alt_text,
-            'order'     => $newOrder,
             'is_active' => $request->has('is_active'),
         ];
 
+        $oldStoragePath = null;
+        $newStoragePath = null;
+
         // If a new image is uploaded, handle replacement
         if ($request->hasFile('image')) {
-            // Delete old file if it's a storage upload (not a seeded asset)
+            // Defer deleting the old file until after the database update succeeds.
             if (!str_starts_with($logo->image_path, 'assets/')) {
-                Storage::disk('public')->delete($logo->image_path);
+                $oldStoragePath = $logo->image_path;
             }
 
             // Store new file
-            $data['image_path'] = $request->file('image')->store('logos', 'public');
+            $newStoragePath = $request->file('image')->store('logos', 'public');
+            $data['image_path'] = $newStoragePath;
         }
 
-        $logo->update($data);
+        try {
+            DB::transaction(function () use ($logo, $data, $newOrder) {
+                $logo->update($data);
+                Logo::resequence($logo->fresh(), $newOrder);
+            });
+        } catch (\Throwable $e) {
+            // If the DB write fails after storing the new image, clean up the orphaned file.
+            if ($newStoragePath) {
+                Storage::disk('public')->delete($newStoragePath);
+            }
+
+            throw $e;
+        }
+
+        if ($oldStoragePath) {
+            Storage::disk('public')->delete($oldStoragePath);
+        }
 
         Cache::forget('trusted_logos');
 
@@ -136,7 +143,10 @@ class LogoController extends Controller
     {
         // image_path is stored as 'logos/filename.jpg' — delete from the public disk
         Storage::disk('public')->delete($logo->image_path);
-        $logo->delete();
+        DB::transaction(function () use ($logo) {
+            $logo->delete();
+            Logo::resequence();
+        });
 
         Cache::forget('trusted_logos');
 

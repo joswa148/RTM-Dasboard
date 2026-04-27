@@ -76,7 +76,7 @@ class Logo extends Model
     /** Scope: ordered by the `order` column ascending. */
     public function scopeOrdered($query)
     {
-        return $query->orderBy('order');
+        return $query->orderBy('order')->orderBy('id');
     }
 
     /**
@@ -84,7 +84,9 @@ class Logo extends Model
      */
     public static function nextOrder(): int
     {
-        return (int) self::max('order') + 1;
+        $maxOrder = self::max('order');
+
+        return $maxOrder === null ? 0 : ((int) $maxOrder + 1);
     }
 
     /**
@@ -97,5 +99,29 @@ class Logo extends Model
             $query->where('id', '!=', $excludeId);
         }
         $query->increment('order');
+    }
+
+    /**
+     * Rebuild the order column into a clean zero-based sequence.
+     */
+    public static function resequence(?self $pinnedLogo = null, ?int $targetOrder = null): void
+    {
+        $logos = self::ordered()->get()->values();
+
+        if ($pinnedLogo && $targetOrder !== null) {
+            $logos = $logos
+                ->reject(fn (self $logo) => $logo->id === $pinnedLogo->id)
+                ->values();
+
+            $targetOrder = max(0, min($targetOrder, $logos->count()));
+
+            $logos->splice($targetOrder, 0, [$pinnedLogo]);
+        }
+
+        foreach ($logos->values() as $index => $logo) {
+            if ((int) $logo->order !== $index) {
+                $logo->updateQuietly(['order' => $index]);
+            }
+        }
     }
 }
