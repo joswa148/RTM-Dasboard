@@ -31,12 +31,8 @@ smartlook('init', '7065b670aec8a5f74b51ea1967a8fc3558769d81', { region: 'eu' });
     @php
         $rtmVersion = time();
     @endphp
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}">
-    <!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
 <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}">
 <!-- Bootstrap CSS -->
