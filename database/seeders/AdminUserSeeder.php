@@ -11,7 +11,7 @@ class AdminUserSeeder extends Seeder
     public function run(): void
     {
         User::updateOrCreate(
-            ['email' => 'admin@right-trademark.com'],
+            ['email' => 'gcbsit2025@gmail.com'],
             [
                 'name'              => 'RTM Administrator',
                 'password'          => Hash::make('Rtm@Admin#2026!Secure'),
