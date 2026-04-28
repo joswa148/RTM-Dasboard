@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Robots" content="INDEX,FOLLOW">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/assets/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    @php
+        $rtmVersion = time();
+    @endphp
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}?v={{ $rtmVersion }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap Icons CDN -->
 
 
@@ -26,7 +29,7 @@
     <div class="row align-items-center">
       <!-- Left Logo Column -->
       <div class="col-md-6 col-6">
-        <img src="assets/images/Simplification.webp" alt="Logo">
+        <img src="{{ asset('assets/images/Simplification.webp') }}" alt="Logo">
 
       </div>
 
@@ -34,7 +37,7 @@
       <div class="col-md-6 col-6 text-end la">
         <a href="https://right-trademark.com/portal/login" class="btn btn-login me-2">LOG IN</a>
         <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp  head-top-butto">
-          <img src="assets/images/icon1.svg" alt=""> WhatsApp Now
+          <img src="{{ asset('assets/images/icon1.svg') }}" alt=""> WhatsApp Now
         </a>
       </div>
     </div>

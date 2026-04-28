@@ -17,9 +17,8 @@
     @php
         $rtmVersion = time();
     @endphp
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}"   >
-    <link rel="stylesheet" href="{{ asset('assets/images/Frame-bg.webp') }}"  />
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}?v={{ $rtmVersion }} " >
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}?v={{ $rtmVersion }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="icon" href="{{ asset('assets/images/favicon.webp') }}">
 
