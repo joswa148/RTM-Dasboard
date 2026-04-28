@@ -837,9 +837,9 @@ onclick="openWhatsApp()" class="btn btn-light boxsas rounded-circle p-2 d-flex a
 </section>
 
 <div class="services-resources pt-0">
-    @include('Layouts.indexheader')
+    @include('layouts.indexheader')
 </div>
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

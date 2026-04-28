@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -181,7 +181,7 @@ body {  font-family: "Poppins", sans-serif; }
 
 
 
-  @include('Layouts.footer')
+  @include('layouts.footer')
 
 
 

@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -208,7 +208,7 @@
 
 
   
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

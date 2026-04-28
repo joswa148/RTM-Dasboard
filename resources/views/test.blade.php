@@ -1,95 +1,95 @@
-@include('Layouts.app')
+@include('layouts.app')
 
 @verbatim
-<!-- Structure Schema Start -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LegalService",
-  "@id": "https://right-trademark.com/#legalservice",
-  "name": "Right Trademark",
-  "url": "https://right-trademark.com/",
-  "description": "Right Trademark offers trademark registration, trademark search, trademark renewal, and brand protection services in UAE, Dubai, and worldwide.",
-  "logo": "https://right-trademark.com/assets/images/RTMlogo.webp",
-  "image": "https://right-trademark.com/assets/images/Frame-bg.webp",
-  "telephone": "+971 56 251 7290",
-  "email": "sales@right-trademark.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressCountry": "AE"
-  },
-  "makesOffer": [
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Trademark Registration Service",
-        "serviceType": "Trademark Registration",
-        "areaServed": {
-          "@type": "Country",
-          "name": "United Arab Emirates"
+  <!-- Structure Schema Start -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "@id": "https://right-trademark.com/#legalservice",
+    "name": "Right Trademark",
+    "url": "https://right-trademark.com/",
+    "description": "Right Trademark offers trademark registration, trademark search, trademark renewal, and brand protection services in UAE, Dubai, and worldwide.",
+    "logo": "https://right-trademark.com/assets/images/RTMlogo.webp",
+    "image": "https://right-trademark.com/assets/images/Frame-bg.webp",
+    "telephone": "+971 56 251 7290",
+    "email": "sales@right-trademark.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "AE"
+    },
+    "makesOffer": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Trademark Registration Service",
+          "serviceType": "Trademark Registration",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Arab Emirates"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Trademark Search Service",
+          "serviceType": "Trademark Search",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Arab Emirates"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Trademark Renewal Service",
+          "serviceType": "Trademark Renewal",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United Arab Emirates"
+          }
         }
       }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Trademark Search Service",
-        "serviceType": "Trademark Search",
-        "areaServed": {
-          "@type": "Country",
-          "name": "United Arab Emirates"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Right Trademark offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We offer trademark registration, renewal, revival, extension, and brand protection services in Dubai and across the UAE."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can use your trademark services?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our services are suitable for UAE startups, SMEs, large companies, and international brands entering the UAE market."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does trademark registration take in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trademark registration in the UAE typically takes 6 to 18 months, depending on the application, objections, and opposition process."
         }
       }
-    },
-    {
-      "@type": "Offer",
-      "itemOffered": {
-        "@type": "Service",
-        "name": "Trademark Renewal Service",
-        "serviceType": "Trademark Renewal",
-        "areaServed": {
-          "@type": "Country",
-          "name": "United Arab Emirates"
-        }
-      }
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What services does Right Trademark offer?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We offer trademark registration, renewal, revival, extension, and brand protection services in Dubai and across the UAE."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who can use your trademark services?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Our services are suitable for UAE startups, SMEs, large companies, and international brands entering the UAE market."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does trademark registration take in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration in the UAE typically takes 6 to 18 months, depending on the application, objections, and opposition process."
-      }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 @endverbatim
 
 <style>
@@ -203,8 +203,8 @@
     <div class="d-flex gap-4 align-items-center justify-content-center">
       <div class="scroll-container">
         <div class="scroll-wrapper" id="scroll-wrapper">
-          @for($i=1; $i<=6; $i++)
-            <img src="{{ asset('assets/images/logo-'.$i.'.png') }}" alt="Brand Logo {{ $i }}" width="120" height="60" loading="lazy">
+          @for($i = 1; $i <= 6; $i++)
+            <img src="{{ asset('assets/images/logo-' . $i . '.png') }}" alt="Brand Logo {{ $i }}" width="120" height="60" loading="lazy">
           @endfor
         </div>
       </div>
@@ -293,9 +293,9 @@
 
   
 
-@include('Layouts.indexheader')
+@include('layouts.indexheader')
 
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

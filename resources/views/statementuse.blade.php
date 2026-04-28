@@ -1,4 +1,4 @@
-@include('Layouts.app')
+@include('layouts.app')
 
  <!-- HERO (red frame + content) -->
   <div class="container my-3 my-lg-4" style="margin-bottom:0px">
@@ -237,9 +237,9 @@ A Trademark Statement of Use secures your application, provides legal protection
   </section>
   
   <div class="services-resources pt-0">
-    @include('Layouts.indexheader')
+    @include('layouts.indexheader')
 </div>
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

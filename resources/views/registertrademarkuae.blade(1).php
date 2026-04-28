@@ -1057,4 +1057,4 @@ onclick="openWhatsApp()" href="#" class="btn btn-whatsapp">
 </style>
 
 
-@include('Layouts.footer')
+@include('layouts.footer')

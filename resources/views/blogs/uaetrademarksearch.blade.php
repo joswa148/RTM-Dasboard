@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,126 +48,126 @@
   </style>
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://right-trademark.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://right-trademark.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Trademark Search Dubai UAE",
-      "item": "https://right-trademark.com/blog/trademark-search-dubai-uae"
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://right-trademark.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://right-trademark.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Trademark Search Dubai UAE",
+          "item": "https://right-trademark.com/blog/trademark-search-dubai-uae"
+        }
+      ]
     }
-  ]
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
   
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/trademark-search-dubai-uae"
-  },
-  "headline": "Trademark Search in Dubai & UAE: Complete Guide, Steps and Tips",
-  "description": "Learn how to conduct a trademark search in Dubai and the UAE, why it’s important, where it’s done, and expert tips from Right Trademark.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://right-trademark.com/assets/images/tser.webp"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "url": "https://right-trademark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://right-trademark.com/blog/trademark-search-dubai-uae"
+    },
+    "headline": "Trademark Search in Dubai & UAE: Complete Guide, Steps and Tips",
+    "description": "Learn how to conduct a trademark search in Dubai and the UAE, why it’s important, where it’s done, and expert tips from Right Trademark.",
+    "image": {
       "@type": "ImageObject",
-      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
-    }
-  },
-  "datePublished": "2025-11-12",
-  "dateModified": "2025-11-13"
-}
-</script>
+      "url": "https://right-trademark.com/assets/images/tser.webp"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Right Trademark",
+      "url": "https://right-trademark.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Right Trademark",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+      }
+    },
+    "datePublished": "2025-11-12",
+    "dateModified": "2025-11-13"
+  }
+  </script>
 @endverbatim
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is trademark search?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It checks your branding name or logo to see if it is already registered or too similar to someone else’s existing trademarks."
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is trademark search?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It checks your branding name or logo to see if it is already registered or too similar to someone else’s existing trademarks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is a trademark search important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A trademark search helps prevent possible rejection, legal disputes, and costly litigation by identifying conflicts early."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does the TM Search perform?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The search looks for similar or identical trademarks in official trademark records to check for possible conflicts."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the trademark search function?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brand information is checked against trademark registration databases, and the results are reported."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I file without a trademark search?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Filing without a trademark search increases the risk of rejection and legal issues, as you may inadvertently infringe on someone else’s rights."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of searches will be covered?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A comprehensive search normally covers name search, similar mark search, and logo search to assess conflicts."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Why is a trademark search important?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A trademark search helps prevent possible rejection, legal disputes, and costly litigation by identifying conflicts early."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What does the TM Search perform?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The search looks for similar or identical trademarks in official trademark records to check for possible conflicts."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does the trademark search function?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brand information is checked against trademark registration databases, and the results are reported."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I file without a trademark search?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Filing without a trademark search increases the risk of rejection and legal issues, as you may inadvertently infringe on someone else’s rights."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What kinds of searches will be covered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A comprehensive search normally covers name search, similar mark search, and logo search to assess conflicts."
-      }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 @endverbatim
 
 </head>
@@ -316,7 +316,7 @@
 
 
 
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

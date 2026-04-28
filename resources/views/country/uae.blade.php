@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 
 
@@ -238,9 +238,9 @@
       
 </script>
 
-@include('Layouts.indexheader')
+@include('layouts.indexheader')
 
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

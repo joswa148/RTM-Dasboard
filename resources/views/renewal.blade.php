@@ -1,4 +1,4 @@
-@include('Layouts.app')
+@include('layouts.app')
 
 @verbatim
 <!-- Schema Start -->
@@ -314,9 +314,9 @@
     </div>
   </section>
   <div class="services-resources pt-0">
-    @include('Layouts.indexheader')
+    @include('layouts.indexheader')
 </div>
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

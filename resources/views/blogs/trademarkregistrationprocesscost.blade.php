@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,96 +48,96 @@
   </style>
   
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost"
-  },
-  "headline": "UAE Trademark Registration Process & Cost (2026 Guide)",
-  "description": "Complete guide to UAE trademark registration including process, cost, timeline, and requirements. Learn how to register a trademark in UAE step-by-step.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://right-trademark.com/wp-content/uploads/2024/01/trademark-registration-uae.jpg"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Right Trademark"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost"
+    },
+    "headline": "UAE Trademark Registration Process & Cost (2026 Guide)",
+    "description": "Complete guide to UAE trademark registration including process, cost, timeline, and requirements. Learn how to register a trademark in UAE step-by-step.",
+    "image": {
       "@type": "ImageObject",
-      "url": "https://right-trademark.com/wp-content/uploads/2024/01/logo.png"
-    }
-  },
-  "datePublished": "2026-03-30",
-  "dateModified": "2026-03-31"
-}
-</script>
+      "url": "https://right-trademark.com/wp-content/uploads/2024/01/trademark-registration-uae.jpg"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Right Trademark"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Right Trademark",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://right-trademark.com/wp-content/uploads/2024/01/logo.png"
+      }
+    },
+    "datePublished": "2026-03-30",
+    "dateModified": "2026-03-31"
+  }
+  </script>
 @endverbatim
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost#faq",
-  "mainEntity": [
- 
-    {
-      "@type": "Question",
-      "name": "What is the cost of trademark registration in UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration cost in UAE starts from approximately AED 6,500 per class for government fees and may go up to AED 10,500 or more including publication and professional charges."
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": "https://right-trademark.com/blog/uae-trademark-registration-process-cost#faq",
+    "mainEntity": [
+
+      {
+        "@type": "Question",
+        "name": "What is the cost of trademark registration in UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trademark registration cost in UAE starts from approximately AED 6,500 per class for government fees and may go up to AED 10,500 or more including publication and professional charges."
+        }
+      },
+
+      {
+        "@type": "Question",
+        "name": "How long does trademark registration take in UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trademark registration in UAE usually takes between 4 to 7 months if there are no objections or oppositions."
+        }
+      },
+
+      {
+        "@type": "Question",
+        "name": "What are the steps to register a trademark in UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The process includes trademark search, application filing, examination, publication in the trademark journal, opposition period, and final registration certificate issuance."
+        }
+      },
+
+      {
+        "@type": "Question",
+        "name": "What documents are required for trademark registration in UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Required documents include trademark logo, applicant details, passport or trade license copy, list of goods or services, and power of attorney if applying through an agent."
+        }
+      },
+
+      {
+        "@type": "Question",
+        "name": "How long is a trademark valid in UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A registered trademark in UAE is valid for 10 years and can be renewed for additional 10-year periods indefinitely."
+        }
       }
-    },
- 
-    {
-      "@type": "Question",
-      "name": "How long does trademark registration take in UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration in UAE usually takes between 4 to 7 months if there are no objections or oppositions."
-      }
-    },
- 
-    {
-      "@type": "Question",
-      "name": "What are the steps to register a trademark in UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The process includes trademark search, application filing, examination, publication in the trademark journal, opposition period, and final registration certificate issuance."
-      }
-    },
- 
-    {
-      "@type": "Question",
-      "name": "What documents are required for trademark registration in UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Required documents include trademark logo, applicant details, passport or trade license copy, list of goods or services, and power of attorney if applying through an agent."
-      }
-    },
- 
-    {
-      "@type": "Question",
-      "name": "How long is a trademark valid in UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A registered trademark in UAE is valid for 10 years and can be renewed for additional 10-year periods indefinitely."
-      }
-    }
- 
-  ]
-}
-</script>
+
+    ]
+  }
+  </script>
 
 @endverbatim
   
@@ -343,7 +343,7 @@
 
 
   
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

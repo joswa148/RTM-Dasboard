@@ -1,4 +1,4 @@
-@include('Layouts.app')
+@include('layouts.app')
 <div class="la">
   <div class="hero-bg">
 
@@ -9,18 +9,18 @@
           <div class="col-md-7">
             <h1 class="fw-bold mb-2">
               Trademark <br>
-             Registration  <span class="text-danger"> India</span>
+              Registration <span class="text-danger"> India</span>
             </h1>
             <p class="fs-5 fw-semibold mb-3">Protect your Brand Name & Logo</p>
             <h2 class="price fw-bold mb-4"><span class="text-decoration-none text-dark">$</span>400</h2>
-          <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
+            <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
               <img src="assets/images/icon1.webp" alt=""> WhatsApp
             </a>
           </div>
 
           <!-- Right Image -->
           <div class="col-md-5 text-center">
-      <img src="assets/images/hero1.png" alt="Woman" class="img-fluid m-done" style="max-height: 400px;">
+            <img src="assets/images/hero1.png" alt="Woman" class="img-fluid m-done" style="max-height: 400px;">
           </div>
         </div>
       </div>
@@ -30,16 +30,16 @@
         <p class="fs-3">Trusted by over <b class="Trusted"> 5000+ </b> Brands Globally</p>
         <div class="d-flex gap-4 align-items-center justify-content-center">
           <div class="scroll-container">
-              <div class="scroll-wrapper" id="scroll-wrapper">
-                <img src="assets/images/logo-1.png" alt="Logo 1">
-                <img src="assets/images/logo-2.png" alt="Logo 2">
-                <img src="assets/images/logo-3.png" alt="Logo 3">
-                <img src="assets/images/logo-4.png" alt="Logo 4">
-                <img src="assets/images/logo-5.png" alt="Logo 5">
-                <img src="assets/images/logo-6.png" alt="Logo 6">
+            <div class="scroll-wrapper" id="scroll-wrapper">
+              <img src="assets/images/logo-1.png" alt="Logo 1">
+              <img src="assets/images/logo-2.png" alt="Logo 2">
+              <img src="assets/images/logo-3.png" alt="Logo 3">
+              <img src="assets/images/logo-4.png" alt="Logo 4">
+              <img src="assets/images/logo-5.png" alt="Logo 5">
+              <img src="assets/images/logo-6.png" alt="Logo 6">
 
-              </div>
             </div>
+          </div>
 
           <div class="img-border"></div>
           <img src="assets/images/greview.png" class="we" width="180px" alt="">
@@ -56,7 +56,7 @@
       <div class="row ">
         <!-- Left Large Card -->
         <div class="col-lg-6" id="leftCard">
-        <!-- <div class="card-custom position-relative ">
+          <!-- <div class="card-custom position-relative ">
             <h4>Trademark Registration</h4>(Individual)</h4>
             <p class="price fs-4">
               <span class="old-price"> <img src="assets/images/Dlogo.webp" alt="" style="width: 5%; ">1000</span>
@@ -85,7 +85,8 @@
             <h4>Trademark Registration</h4><span class="dece">(Business, Foreign Company, Individual)</span>
             <p class="price fs-4">
               <span class="old-price"> <span id="dollarsmall1">$</span>1000</span>
-            <span class="text-dark" id="dollarbig1">$</span> <span class="d-inline-block">400</span> <small class="old-price">(All inclusive)</small>
+              <span class="text-dark" id="dollarbig1">$</span> <span class="d-inline-block">400</span> <small
+                class="old-price">(All inclusive)</small>
             </p>
             <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
               <img src="assets/images/icon1.webp" alt=""> WhatsApp
@@ -94,8 +95,9 @@
 
           <!-- Right Bottom Card -->
           <div class="card-custom mt-5 d-none d-lg-block mjs" onclick="loadCard('business2')">
-            <h4>Trademark Registration Requirements in the India</h4> <span class="dece">(Business, Foreign Company, Individual)</span>
-         
+            <h4>Trademark Registration Requirements in the India</h4> <span class="dece">(Business, Foreign Company,
+              Individual)</span>
+
             <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
               <img src="assets/images/icon1.webp" alt=""> WhatsApp
             </a>
@@ -103,12 +105,12 @@
 
           <div class="card-custom position-relative d-lg-none ">
             <h4>Trademark Registration</h4><span class="dece">(Business, Foreign Company, Individual)</span>
-          
+
             <ul class="checklist" style="position: relative;z-index: 3000;">
               <li>Trademark in PDF & Image file </li>
               <li>Trade License Copy</li>
               <li>Passport copy of Authorized Signatory</li>
-               </ul>
+            </ul>
 
             <img src="assets/images/landinggirl2.webp" alt="Thumbs up" class="thumbs-up-img-javascript" />
             <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
@@ -179,15 +181,15 @@
       </div>
     </div>
   </section>
-  
-  
+
+
 
   <section class="py-5 call-to">
     <div class="container">
       <div class="text-center jde bg-white p-5 rounded-5 shadow-sm">
         <h3 class="fw-bold mb-3">Talk to our Experts & Get Trademark</h3>
         <h5 class="fw-semibold mb-4">
-          <b>  <span class="text-dark"><span class="text-dark" id="footerdollar">$</span> 400</b></span>
+          <b> <span class="text-dark"><span class="text-dark" id="footerdollar">$</span> 400</b></span>
           <small class="text-muted">(All inclusive)</small>
         </h5>
         <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-whatsapp" onclick="openWhatsApp()">
@@ -197,31 +199,31 @@
     </div>
   </section>
 
-@include('Layouts.indexheader')
+  @include('layouts.indexheader')
 
-@include('Layouts.footer')
+  @include('layouts.footer')
 
 
   <style>
-      section.todaytrade.mb-5.container.px-4.mt-2.px-lg-5.mt-lg-5 {
-    display: none;
-}
+    section.todaytrade.mb-5.container.px-4.mt-2.px-lg-5.mt-lg-5 {
+      display: none;
+    }
   </style>
 
 
-<script>
-  const wrapper = document.getElementById('scroll-wrapper');
- 
-  // Clone all children for seamless looping
-  const images = wrapper.querySelectorAll('img');
-  images.forEach(img => {
-    const clone = img.cloneNode(true);
-    wrapper.appendChild(clone);
-  });
- 
-  // Pause on hover
-  wrapper.addEventListener('mouseenter', () => wrapper.classList.add('pause'));
-  wrapper.addEventListener('mouseleave', () => wrapper.classList.remove('pause'));
+  <script>
+    const wrapper = document.getElementById('scroll-wrapper');
+
+    // Clone all children for seamless looping
+    const images = wrapper.querySelectorAll('img');
+    images.forEach(img => {
+      const clone = img.cloneNode(true);
+      wrapper.appendChild(clone);
+    });
+
+    // Pause on hover
+    wrapper.addEventListener('mouseenter', () => wrapper.classList.add('pause'));
+    wrapper.addEventListener('mouseleave', () => wrapper.classList.remove('pause'));
 
 
 
@@ -229,10 +231,10 @@
 
 
 
-  // content change ......
+    // content change ......
 
- const cardContent = {
-    individual: `<div class="card-custom position-relative ">
+    const cardContent = {
+      individual: `<div class="card-custom position-relative ">
             <h4>Trademark Registration</h4><span class="dece">(Business, Foreign Company, Individual)</span>
             <p class="price fs-4">
               <span class="old-price"><span class="text-decoration-none" id="thdollar1">$</span> 1000</span>
@@ -254,7 +256,7 @@
               <img src="assets/images/icon1.webp" alt=""> WhatsApp
             </a>
           </div>`,
-            business1: `<div class="card-custom position-relative ">
+      business1: `<div class="card-custom position-relative ">
             <h4>Trademark Registration</h4><span class="dece">(Business, Foreign Company, Individual)</span>
             <p class="price fs-4">
               <span class="old-price"> <span class="text-decoration-none" id="thdollar2">$</span>1000</span>
@@ -273,7 +275,7 @@
               <img src="assets/images/icon1.webp" alt=""> WhatsApp
             </a>
           </div>`,
-            business2:`<div class="card-custom position-relative ">
+      business2: `<div class="card-custom position-relative ">
             <h4>Trademark Registration Requirements in the India</h4><span class="dece">(Business, Foreign Company, Individual)</span>
           
             <ul class="checklist" style="position: relative;z-index: 3000;">
@@ -289,20 +291,16 @@
             </a>
           </div>`}
 
-              // Load default
-  document.addEventListener("DOMContentLoaded", function () {
-    loadCard('individual');
-  });
+    // Load default
+    document.addEventListener("DOMContentLoaded", function () {
+      loadCard('individual');
+    });
 
-  function loadCard(type) {
-    document.getElementById("leftCard").innerHTML = cardContent[type];
-  }
+    function loadCard(type) {
+      document.getElementById("leftCard").innerHTML = cardContent[type];
+    }
 
-</script>
-</body>
-</html>
+  </script>
+  </body>
 
-
-
-
-
+  </html>

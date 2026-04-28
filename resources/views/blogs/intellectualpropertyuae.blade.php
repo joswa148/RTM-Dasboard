@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,34 +48,34 @@
   </style>
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/intellectual-property-uae"
-  },
-  "headline": "Intellectual Property in the UAE",
-  "description": "A Complete Guide to Protecting Your Ideas in Dubai and Across the Emirates with Intellectual Property Rights.",
-  "image": "https://right-trademark.com/assets/images/TRinUAE.webp",
-  "author": {
-    "@type": "Person",
-    "name": "Author Name"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://right-trademark.com/blog/intellectual-property-uae"
+      },
+      "headline": "Intellectual Property in the UAE",
+      "description": "A Complete Guide to Protecting Your Ideas in Dubai and Across the Emirates with Intellectual Property Rights.",
+      "image": "https://right-trademark.com/assets/images/TRinUAE.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Author Name"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Right Trademark",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+        }
+      },
+      "datePublished": "2025-11-06",
+      "dateModified": "2025-11-07"
     }
-  },
-  "datePublished": "2025-11-06",
-  "dateModified": "2025-11-07"
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 </head>
 <body>
@@ -247,7 +247,7 @@
 
 
   
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,36 +48,36 @@
   </style>
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/trademark-registration-for-online-brand-growth"
-  },
-  "headline": "Trademark Registration for Online Brand Growth",
-  "description": "Learn how trademark registration protects your brand, boosts online visibility, and supports long-term digital growth.",
-  "image": [
-    "https://right-trademark.com/assets/images/onlinebrandgrowth.webp"
-  ],
-  "author": {
-    "@type": "Person",
-    "name": "Author Name"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right-Trademark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://right-trademark.com/blog/trademark-registration-for-online-brand-growth"
+      },
+      "headline": "Trademark Registration for Online Brand Growth",
+      "description": "Learn how trademark registration protects your brand, boosts online visibility, and supports long-term digital growth.",
+      "image": [
+        "https://right-trademark.com/assets/images/onlinebrandgrowth.webp"
+      ],
+      "author": {
+        "@type": "Person",
+        "name": "Author Name"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Right-Trademark",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+        }
+      },
+      "datePublished": "2026-03-04",
+      "dateModified": "2026-03-05"
     }
-  },
-  "datePublished": "2026-03-04",
-  "dateModified": "2026-03-05"
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 
 </head>
@@ -362,7 +362,7 @@
 
 
   
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

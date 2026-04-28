@@ -1,4 +1,4 @@
-@include('Layouts.app')
+@include('layouts.app')
   <div class="nav-img">
     <h2 class="text-center mt-5 " style="font-weight: 700; font-size: 38px;">Trademark</h1>
   </div>
@@ -155,7 +155,7 @@
     font-weight: 600;
    }
 </style>
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

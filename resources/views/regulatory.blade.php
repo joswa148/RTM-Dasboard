@@ -1,4 +1,4 @@
-@include('Layouts.app')
+@include('layouts.app')
 
  <!-- HERO (red frame + content) -->
   <div class="container my-3 my-lg-4" style="margin-bottom:0px">
@@ -267,9 +267,9 @@ Obtaining approvals and permits in the UAE ensures your business runs smoothly w
   </section>
   
 <div class="services-resources pt-0">
-    @include('Layouts.indexheader')
+    @include('layouts.indexheader')
 </div>
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

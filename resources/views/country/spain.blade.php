@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <div class="la">
   <div class="hero-bg">
@@ -181,9 +181,9 @@
       </div>
     </div>
   </section>
-@include('Layouts.indexheader')
+@include('layouts.indexheader')
   
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

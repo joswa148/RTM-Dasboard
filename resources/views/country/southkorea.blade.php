@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 <div class="la">
   <div class="hero-bg">
     <section class="py-5 hero">
@@ -217,8 +217,8 @@
 
 
 </script>
-@include('Layouts.indexheader')
-@include('Layouts.footer')
+@include('layouts.indexheader')
+@include('layouts.footer')
 
 
 

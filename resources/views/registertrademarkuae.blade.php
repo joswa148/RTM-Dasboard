@@ -29,7 +29,7 @@ smartlook('init', '7065b670aec8a5f74b51ea1967a8fc3558769d81', { region: 'eu' });
     <?php /* <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"> */ ?>
   
     @php
-        $rtmVersion = time();
+      $rtmVersion = time();
     @endphp
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}?v={{ $rtmVersion }}">
@@ -1130,7 +1130,7 @@ header .button {
 </style>
 
 
-@include('Layouts.footer')
+@include('layouts.footer')
 
 
 

@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -50,124 +50,124 @@
 
  
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/trademark-consultant-uae"
-  },
-  "headline": "Trademark Consultant in UAE: Services, Cost & How to Choose the Right Expert",
-  "description": "A complete guide to why you need a trademark consultant in the UAE, how they help, their services, and steps for trademark registration to protect your brand.",
-  "image": "https://right-trademark.com/assets/images/TRinUAE.webp",
-  "author": {
-    "@type": "Person",
-    "name": "Right Trademark"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://right-trademark.com/blog/trademark-consultant-uae"
+      },
+      "headline": "Trademark Consultant in UAE: Services, Cost & How to Choose the Right Expert",
+      "description": "A complete guide to why you need a trademark consultant in the UAE, how they help, their services, and steps for trademark registration to protect your brand.",
+      "image": "https://right-trademark.com/assets/images/TRinUAE.webp",
+      "author": {
+        "@type": "Person",
+        "name": "Right Trademark"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Right Trademark",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+        }
+      },
+      "datePublished": "2025-11-25",
+      "dateModified": "2025-11-26"
     }
-  },
-  "datePublished": "2025-11-25",
-  "dateModified": "2025-11-26"
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is a trademark consultant in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A trademark consultant in the UAE is a professional who guides businesses through the trademark registration process, ensures compliance with UAE laws, conducts trademark searches, and helps avoid objections or rejections."
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a trademark consultant in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A trademark consultant in the UAE is a professional who guides businesses through the trademark registration process, ensures compliance with UAE laws, conducts trademark searches, and helps avoid objections or rejections."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I hire a trademark consultant in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hiring a trademark consultant ensures your application is accurate, complete, and compliant with UAE regulations, helps overcome objections, speeds up the process, and protects your brand against infringement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What services does a UAE trademark consultant provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A UAE trademark consultant typically provides trademark search, filing and documentation, objection handling, renewals and amendments, monitoring services, and overall intellectual property guidance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the trademark registration process in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The process usually involves a trademark search, preparation of application documents, filing with the Ministry of Economy, examination, publication in local newspapers, and issuance of the registration certificate if no objections arise."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does trademark registration take in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Trademark registration in the UAE typically takes around 3 to 6 months depending on whether there are objections or oppositions during the process."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What problems can a trademark consultant help with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Consultants can help with issues like similar existing trademarks, incomplete documentation, incorrect class selection, legal objections from the Ministry, and opposition by third parties."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I hire a trademark consultant in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Hiring a trademark consultant ensures your application is accurate, complete, and compliant with UAE regulations, helps overcome objections, speeds up the process, and protects your brand against infringement."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What services does a UAE trademark consultant provide?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A UAE trademark consultant typically provides trademark search, filing and documentation, objection handling, renewals and amendments, monitoring services, and overall intellectual property guidance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the trademark registration process in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The process usually involves a trademark search, preparation of application documents, filing with the Ministry of Economy, examination, publication in local newspapers, and issuance of the registration certificate if no objections arise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does trademark registration take in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration in the UAE typically takes around 3 to 6 months depending on whether there are objections or oppositions during the process."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What problems can a trademark consultant help with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Consultants can help with issues like similar existing trademarks, incomplete documentation, incorrect class selection, legal objections from the Ministry, and opposition by third parties."
-      }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 @endverbatim
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://right-trademark.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://right-trademark.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Trademark Consultant UAE",
-      "item": "https://right-trademark.com/blog/trademark-consultant-uae"
-    }
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://right-trademark.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Blog",
+        "item": "https://right-trademark.com/blog"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Trademark Consultant UAE",
+        "item": "https://right-trademark.com/blog/trademark-consultant-uae"
+      }
+    ]
+  }
+  </script>
 @endverbatim
 
 </head>
@@ -267,7 +267,7 @@
 
 
 
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 
 @verbatim
@@ -1390,6 +1390,6 @@ I’m grateful for their reliable service.
  
 </div>
 
-@include('Layouts.indexheader')
+@include('layouts.indexheader')
 
-@include('Layouts.footer')
+@include('layouts.footer')

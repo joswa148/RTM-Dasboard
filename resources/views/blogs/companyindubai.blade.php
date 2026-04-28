@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,190 +48,190 @@
   </style>
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://right-trademark.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://right-trademark.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How to Register a Brand in Dubai UAE",
-      "item": "https://right-trademark.com/blog/how-to-register-a-brand-in-dubai-uae"
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://right-trademark.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://right-trademark.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Register a Brand in Dubai UAE",
+          "item": "https://right-trademark.com/blog/how-to-register-a-brand-in-dubai-uae"
+        }
+      ]
     }
-  ]
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/how-to-register-a-brand-in-dubai-uae"
-  },
-  "headline": "How to Register a Brand in Dubai & UAE: Step-by-Step Guide",
-  "description": "Learn how to register a brand in Dubai and the UAE, including step-by-step process, required documents, costs, timelines, and expert tips for successful registration.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://right-trademark.com/assets/images/regcom.webp"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Right Trademark"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://right-trademark.com/blog/how-to-register-a-brand-in-dubai-uae"
+      },
+      "headline": "How to Register a Brand in Dubai & UAE: Step-by-Step Guide",
+      "description": "Learn how to register a brand in Dubai and the UAE, including step-by-step process, required documents, costs, timelines, and expert tips for successful registration.",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://right-trademark.com/assets/images/regcom.webp"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Right Trademark"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Right Trademark",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+        }
+      },
+      "datePublished": "2025-11-07",
+      "dateModified": "2025-11-08"
     }
-  },
-  "datePublished": "2025-11-07",
-  "dateModified": "2025-11-08"
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is brand registration in Dubai/UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brand registration is the legal protection of your name, logo, or slogan as a trademark with the UAE Ministry of Economy."
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is brand registration in Dubai/UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brand registration is the legal protection of your name, logo, or slogan as a trademark with the UAE Ministry of Economy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why should I register my brand in Dubai/UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It protects your brand from misuse, gives exclusive rights, builds trust, and supports business expansion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Who can register a trademark in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "UAE residents can apply directly, while foreign applicants must use a local IP agent to register a trademark in the UAE."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What can be registered as a trademark?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brand names, logos, slogans, symbols, colours, and shapes that are unique and lawful can be registered as trademarks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the steps to register a brand in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The steps include trademark search, document preparation, application filing, review by the Ministry, publication, and certificate issuance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does brand registration take in Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Brand registration usually takes about 4–6 months, depending on approvals and whether there are any oppositions."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the cost of trademark registration in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Government fees typically range from AED 6,500 to AED 10,000 or more, depending on number of classes and professional fees."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long is a UAE trademark valid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A trademark is valid for 10 years and can be renewed indefinitely for further 10-year periods."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if someone opposes my trademark?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If opposition is filed within the 30-day publication period, you may need to respond and resolve issues before registration proceeds."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use the ® symbol before registration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No — use ™ before registration and ® only after you have received official trademark registration."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a local agent required for trademark registration?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, a local IP agent is required for foreign applicants and is recommended even for UAE residents to ensure compliance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What common mistakes should be avoided?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Common mistakes include skipping a trademark search, choosing generic names, submitting incomplete documents, and missing deadlines."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I enforce my trademark in the UAE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Enforce your trademark by monitoring misuse, sending cease-and-desist notices, or filing legal complaints with the authorities."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does UAE trademark registration protect internationally?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Protection applies only in the UAE unless you register internationally under treaties like the Madrid Protocol."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "Why should I register my brand in Dubai/UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It protects your brand from misuse, gives exclusive rights, builds trust, and supports business expansion."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Who can register a trademark in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "UAE residents can apply directly, while foreign applicants must use a local IP agent to register a trademark in the UAE."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What can be registered as a trademark?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brand names, logos, slogans, symbols, colours, and shapes that are unique and lawful can be registered as trademarks."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the steps to register a brand in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The steps include trademark search, document preparation, application filing, review by the Ministry, publication, and certificate issuance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does brand registration take in Dubai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Brand registration usually takes about 4–6 months, depending on approvals and whether there are any oppositions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the cost of trademark registration in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Government fees typically range from AED 6,500 to AED 10,000 or more, depending on number of classes and professional fees."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long is a UAE trademark valid?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A trademark is valid for 10 years and can be renewed indefinitely for further 10-year periods."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if someone opposes my trademark?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "If opposition is filed within the 30-day publication period, you may need to respond and resolve issues before registration proceeds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I use the ® symbol before registration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No — use ™ before registration and ® only after you have received official trademark registration."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is a local agent required for trademark registration?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, a local IP agent is required for foreign applicants and is recommended even for UAE residents to ensure compliance."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What common mistakes should be avoided?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common mistakes include skipping a trademark search, choosing generic names, submitting incomplete documents, and missing deadlines."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I enforce my trademark in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Enforce your trademark by monitoring misuse, sending cease-and-desist notices, or filing legal complaints with the authorities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does UAE trademark registration protect internationally?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. Protection applies only in the UAE unless you register internationally under treaties like the Madrid Protocol."
-      }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 @endverbatim
 
 
@@ -390,7 +390,7 @@
 
 
 
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 

@@ -1,5 +1,5 @@
 
-@include('Layouts.app')
+@include('layouts.app')
 
 <!DOCTYPE html>
 <html lang="en">
@@ -48,90 +48,90 @@
   </style>
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "inLanguage": "en",
-  "mainEntity": [
+    <script type="application/ld+json">
     {
-      "@type": "Question",
-      "name": "What is trademark registration in Dubai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration in Dubai is the legal process of protecting a brand name, logo, or symbol under UAE law, granting exclusive ownership rights to the applicant."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does trademark registration take in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Trademark registration in the UAE typically takes around 4 to 6 months, depending on the approval process, publication stage, and any opposition period."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the cost of trademark registration in Dubai?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The cost of trademark registration in Dubai generally ranges between AED 6,000 and AED 10,000, including government fees and administrative charges."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I register a trademark online in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, trademark registration in the UAE can be completed online through the official Ministry of Economy portal."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long is a trademark valid in the UAE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A registered trademark in the UAE is valid for 10 years from the date of registration and can be renewed indefinitely for additional 10-year periods."
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is trademark registration in Dubai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trademark registration in Dubai is the legal process of protecting a brand name, logo, or symbol under UAE law, granting exclusive ownership rights to the applicant."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does trademark registration take in the UAE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trademark registration in the UAE typically takes around 4 to 6 months, depending on the approval process, publication stage, and any opposition period."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the cost of trademark registration in Dubai?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of trademark registration in Dubai generally ranges between AED 6,000 and AED 10,000, including government fees and administrative charges."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I register a trademark online in the UAE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, trademark registration in the UAE can be completed online through the official Ministry of Economy portal."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long is a trademark valid in the UAE?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A registered trademark in the UAE is valid for 10 years from the date of registration and can be renewed indefinitely for additional 10-year periods."
+          }
+        }
+      ]
     }
-  ]
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 
 @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "inLanguage": "en",
-  "headline": "How to Register a Trademark in Dubai, UAE",
-  "description": "Learn how to register a trademark in Dubai, UAE with step-by-step process, requirements, cost, and timeline. Protect your brand legally in the UAE.",
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
-  },
-  "author": {
-    "@type": "Organization",
-    "name": "Right Trademark"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Right Trademark",
-    "logo": {
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "inLanguage": "en",
+    "headline": "How to Register a Trademark in Dubai, UAE",
+    "description": "Learn how to register a trademark in Dubai, UAE with step-by-step process, requirements, cost, and timeline. Protect your brand legally in the UAE.",
+    "image": {
       "@type": "ImageObject",
-      "url": "https://right-trademark.com/wp-content/uploads/2024/01/logo.png"
+      "url": "https://right-trademark.com/assets/images/RTMlogo.webp"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "Right Trademark"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Right Trademark",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://right-trademark.com/wp-content/uploads/2024/01/logo.png"
+      }
+    },
+    "datePublished": "2024-01-01",
+    "dateModified": "2026-04-01",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae"
     }
-  },
-  "datePublished": "2024-01-01",
-  "dateModified": "2026-04-01",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae"
   }
-}
-</script>
+  </script>
 @endverbatim
 
 
@@ -146,34 +146,34 @@
   
   
   @verbatim
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "@id": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae#breadcrumb",
-  "itemListElement": [
+    <script type="application/ld+json">
     {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://right-trademark.com/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://right-trademark.com/blog/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "How to Register a Trademark in Dubai UAE",
-      "item": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae/"
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "@id": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://right-trademark.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://right-trademark.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Register a Trademark in Dubai UAE",
+          "item": "https://right-trademark.com/blog/how-to-register-a-trademark-in-dubai-uae/"
+        }
+      ]
     }
-  ]
-}
-</script>
-@endverbatim
+    </script>
+  @endverbatim
 
 </head>
 <body>
@@ -389,7 +389,7 @@
 
 
   
-  @include('Layouts.footer')
+  @include('layouts.footer')
   
   
 
